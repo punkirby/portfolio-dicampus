@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    min-height: 200vh; 
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-suelo-madera_53876-88628.jpg?semt=ais_user_personalization&w=740&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.presentacion p,
+.contacto p{
+    margin: 2px 0;  
+    padding: 0;     
+}
+.habilidades p{
+    margin: 5px 0;
+    padding: 0;
+}
+
+.contenedor {
+    margin-top: 20px;
+    position: relative;
+    width: 1000px; 
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("fondofinal.png");
+    background-repeat: no-repeat;
+    background-size: cover;       
+    background-position: top center;
+    box-shadow: 3px 3px 8px black;
+    border: 2px solid black;
+}
+
+img{
+    width: 100%;
+}
+
+.fondoImg {
+    position: absolute;
+    width: 262px;
+    height: 262px;
+    background-color: black;
+    border-radius: 50%;
+    left: 600px;
+    top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 8px black;
+
+}
+
+.marcoImg {
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.logo {
+    width: 262px;
+    height: 262px;
+    border-radius: 50%;
+    display: block;
+}
+
+.HTML,
+.CSS,
+.JS,
+.TW,
+.disciplina {
+    font-weight: bold;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-image: url(circulo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 8px black;
+    transition: 0.5s;
+}
+
+.HTML       { left: 680px; top: 70px; }
+.CSS        { left: 570px; top: 130px; }
+.JS         { left: 540px;  top: 240px; }
+.TW         { left: 580px; top: 350px; }
+.disciplina { left: 690px; top:380px; z-index: 10;}
+
+
+.HTML:hover,
+.CSS:hover,
+.JS:hover{
+    scale: 1.1;
+}
+.stat {
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.tipo {
+    font-size: 12px;
+    position: absolute;
+    margin-bottom: 35px;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 3px 3px 8px black;
+}
+
+
+.presentacion{
+    background-color: #e2d3b8;
+    padding: 10px;
+    border: 2px solid black;
+    top: 60px;
+    left: 40px;
+    position: absolute;
+    box-shadow: 3px 3px 8px black;
+    padding: 30px;
+}
+
+.habilidades{
+    background-color: #e2d3b8;
+    border: 2px solid black;
+    top: 300px;
+    left: 40px;
+    position: absolute;
+    box-shadow: 3px 3px 8px black;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dragon{
+width: 250px;
+z-index: 1000000;
+top: 530px;
+left: 50px;
+position: absolute;
+}
+
+.contacto{
+    background-color: #e2d3b8;
+    padding: 10px;
+    border: 2px solid black;
+    top: 520px;
+    left: 350px;
+    padding-right: 10px;
+    position: absolute;
+    box-shadow: 3px 3px 8px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    z-index: 0;
+    font-size: 20px;
+}
+    
+.descripcion{
+    width: 500px;
+}
+
+.dnd{
+    width: 250px;
+    position: absolute;
+    top: 350px;
+    left: 330px
+}
+
+.trabajos{
+    background-color: #e2d3b8;
+    border: 2px solid black;
+    top: 750px;
+    position: absolute;
+    box-shadow: 3px 3px 8px black;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    z-index: 0;
+    width: 90%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.portfolio{
+   display: flex ;
+   gap: 5px;
+
+}
+
+.carta1{
+margin-top: 850px;
+background-color: #e2d3b8;
+display: flex;
+flex-direction: column;
+padding: 20px;
+border: 2px solid black;
+box-shadow: 3px 3px 8px black;
+flex: 1 1 280px;
+max-width: 320px;
+position: relative;
+height: 420px;
+margin-bottom: 10px;
+}
+
+
+.ajustes{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+.carta1 img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto ;
+    padding: 10px;
+}
+
+.carta1 h2, p{
+    color:rgb(71, 27, 27);
+    font-weight: bold;
+}
